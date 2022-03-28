@@ -267,6 +267,41 @@ class _LoginScreenState extends State<LoginScreen> {
                                     ),
                                   ),
                                 ),
+                              ),
+                              SizedBox(
+                                height: 50.0,
+                              ),
+                              InkWell(
+                                onTap: () {
+                                  tryLogin();
+                                },
+                                child: Container(
+                                  width: double.infinity,
+                                  height: 55,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFF999B84),
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    boxShadow: const [
+                                      BoxShadow(
+                                        color:
+                                            Color.fromRGBO(169, 176, 185, 0.42),
+                                        spreadRadius: 0,
+                                        blurRadius: 8.0,
+                                        offset: Offset(0, 2),
+                                      )
+                                    ],
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Login",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 19.0,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ),
+                                ),
                               )
                             ],
                           ),
